@@ -12,6 +12,7 @@ struct Mahasiswa {
     float ipk;
 };
 
+// Menambahkan mahasiswa
 void tambahMahasiswa() {
     system("cls");
     Mahasiswa mhs;
@@ -55,6 +56,7 @@ void quickSort(Mahasiswa arr[], int low, int high) {
     }
 }
 
+// Menampilkan seluruh mahasiswa
 void tampilkanMahasiswa() {
     system("cls");
     FILE *file = fopen("MahasiswaData.dat", "rb");
@@ -89,6 +91,7 @@ int binarySearch(Mahasiswa arr[], int left, int right, const char* nim) {
     return -1;
 }
 
+// Mencari mahasiswa berdasarkan Jurusan
 void cariMahasiswaJurusan() {
     system("cls");
     char jurusanCari[50];
@@ -120,6 +123,7 @@ void cariMahasiswaJurusan() {
     system("pause");
 }
 
+// Mencari mahasiswa berdasarkan NIM
 void cariMahasiswaNIM() {
     system("cls");
     char nimCari[15];
@@ -151,6 +155,7 @@ void cariMahasiswaNIM() {
     system("pause");
 }
 
+// Memperbarui IPK mahasiswa berdasarkan NIM
 void perbaruiIPK() {
     system("cls");
     char nimCari[15];
